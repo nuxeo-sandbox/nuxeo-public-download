@@ -1,0 +1,10 @@
+<component name="org.nuxeo.ecm.publicdownload.openurl">
+
+  <extension point="openUrl"
+    target="org.nuxeo.ecm.platform.ui.web.auth.service.PluggableAuthenticationService">
+    <openUrl name="PublicDownload">
+      <grantPattern>${org.nuxeo.ecm.contextPath}/site/publicdl/.*</grantPattern>
+    </openUrl>
+  </extension>
+
+</component>
