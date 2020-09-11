@@ -1,0 +1,11 @@
+<component name="nuxeo.publicdownload.adapter.contrib">
+
+  <extension
+    target="org.nuxeo.ecm.core.api.DocumentAdapterService"
+    point="adapters">
+
+    <adapter
+      class="nuxeo.publicdownload.api.PublicDownload"
+      factory="nuxeo.publicdownload.impl.PublicDownloadFactory" />
+  </extension>
+</component>

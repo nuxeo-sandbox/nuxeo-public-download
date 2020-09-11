@@ -1,0 +1,16 @@
+<component
+  name="nuxeo.publicdownload.listener.contrib">
+
+  <extension
+    target="org.nuxeo.ecm.core.event.EventServiceComponent"
+    point="listener">
+    <listener name="PublicDownloadListener"
+    		  async="false"
+      		  postCommit="false"
+      		  class="nuxeo.publicdownload.impl.PublicDownloadListener">
+      <event>aboutToCreate</event>
+      <event>beforeDocumentModification</event>
+    </listener>
+  </extension>
+
+</component>
